@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>color change</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+    #screen {
+        padding-bottom: 50%;
+        border: maroon 4px solid;
+        margin-left: 50px;
+        margin-right: 250px;
+        margin-bottom: 20px;
+    }
+    #bt{
+        padding: 20px;
+        
+    }
+    
+</style>
+<body>
+    <div id="screen">
+        
+    </div>
+    <button onclick="color('red')">Red</button>
+    <button onclick="color('green')">Green</button>
+    <button onclick="color('yellow')">Yellow</button>
+<script> 
+    function color(col){
+        document.getElementById("screen").style.backgroundColor=col;
+        document.getElementById("screen").style.color=white;
+        document.getElementById("screen").innerHTML=col+"changed";
+    }
+</script>
+</body>   
+</html>

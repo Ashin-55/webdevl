@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>frequent</title>
+</head>
+<style>
+    .first{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        color:sienna;
+    }
+</style>
+<script>
+var arr1=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+var mf = 1;
+var m = 0;
+var item;
+for (var i=0; i<arr1.length; i++)
+{
+        for (var j=i; j<arr1.length; j++)
+        {
+                if (arr1[i] == arr1[j])
+                 m++;
+                if (mf<m)
+                {
+                  mf=m; 
+                  item = arr1[i];
+                }
+        }
+        m=0;
+}
+window.alert(item+" ( " +mf +" times ) ") ;
+
+            
+</script>
+
+<body>
+    <div class="first">
+        <p id="p1"><h1>JAVASCRIPT PROJECTS</h1></p>
+    </div>
+    <center>
+        <br><h4>find most frequent item:</h4> 
+      
+    <hr color="Green"> 
+      
+    <form name="myform"> 
+        Enter the element: 
+        <input type="text" name=n value=""> 
+          
+        <br><br> 
+          
+        <button onclick="frequent()">Find Frequent</button>
+    
+    <a href="/js.html" class="previous">&laquo; Previous</a>
+    <a href="#" class="next">Next &raquo;</a>
+</center>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta name="description" content="This is my internship from futuralab.">
+  <!--SEO META TAGS/DESCRIPTION-to see description about webpage from search engine like google-->
+  <!--OG properties|Mainly for social media activities|eg: when we share web page to wtsapp it automatically generate description,link,thumnail image|-->
+  <meta property="og:title" content="My internship" />
+  <meta property="og:url" content="https://thefuturalabs.com/aws-development-training-online" />
+  <meta property="og:description" content="This is my internship from futuralab.">
+  <meta property="og:image" content="https://thefuturalabs.com/aws-development-training-online/images/web.png">
+
+  <link href="css/bootstrap.min.css">
+  <title>FORM</title>
+</head>
+<style>
+  label {
+    text-align: right;
+    display: inline-block;
+    width: 305px;
+  }
+
+  h1 {
+    text-align: center;
+    background-color: darksalmon;
+  }
+
+  body {
+
+
+    background-color: aqua;
+
+  }
+
+  form {
+    background: cornsilk;
+    margin-left: 250px;
+    margin-right: 250px;
+  }
+
+  #first {
+    color: firebrick;
+  }
+
+  #second {
+    color: green;
+  }
+
+  div {
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+  }
+
+  .marg {
+    margin-left: 314.4px;
+  }
+</style>
+
+<body>
+  <h1>Survey Form</h1>
+  <div>
+    <form>
+
+      <h3> let us know how we can improve freeCodecamp</h3>
+
+      <label> name : </label> <input type="text" placeholder="NAME"> </input>
+      <br><br>
+      <label>email : </label> <input type="email" placeholder="enter email"></input>
+      <br><br>
+      <label> Age : </label> <input type="text" placeholder="enter age"> </input> <br><br>
+
+      <label> DOB : </label> <input type="date" placeholder=""> </input> <br>
+
+      <label> which option describe your current Role:</label>
+      <input type="radio"  name="role" value="student">student<br>
+      <input type="radio" class="marg" name="role" value="enterpenor">enterpenor<br>
+      <input type="radio" class="marg" name="role" value="retired">reti<br><br>
+
+      <Label> How likely is that tou would recommend freeCodecamp to a friend? </Label>
+      <input type="radio" name="joice" value="maybe">maybe<br>
+      <input type="radio" class="marg"name="joice" value="not sure">not sure<br>
+      <input type="radio" class="marg"name="joice" value="Definitely">Definitely<br>
+
+      <Label>what do you most like in fcc:</Label> <SELECT name="name" SIZE="">
+        <option value="value">select an option</option>
+        <option value="ashin">ashin </option>
+        <option value="joice">mandan</option>
+      </SELECT>
+      <br>
+      <label>Things That should be improved in future:(chexk All The Applay) </label>
+      <input type="checkbox"  value="Frond End Project"> Frond End Project <br>
+      <input type="checkbox"class="marg" value="Bcak End Project">Back End Project <br>
+      <input type="checkbox" class="marg"value="Data Visualization"> Data Visualization <br><br><br>
+      <input type="button" value="register" id="first">
+      <input type="reset" value="reset" id="second">
+
+    </form>
+  </div>
+</body>
+
+</html>
